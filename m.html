@@ -1,0 +1,34 @@
+/* Selectors */
+element { }
+.class { }
+#id { }
+* { } /* Universal */
+
+/* Box Model */
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+/* Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container { flex-direction: column; }
+}
